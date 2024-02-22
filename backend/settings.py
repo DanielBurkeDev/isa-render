@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DJANGO_DEBUG", "") != "False"
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["dburke.pythonanywhere.com", "127.0.0.1"]
 
 
 # Application definition
@@ -119,6 +119,8 @@ CORS_ORIGIN_WHITELIST = (
     # "http://127.0.0.1:5500",
     # "http://localhost:5500/",
 )
+
+CSRF_TRUSTED_ORIGINS = ["https://dburke.pythonanywhere.com"]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
