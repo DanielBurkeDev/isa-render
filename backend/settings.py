@@ -35,7 +35,7 @@ ALLOWED_HOSTS = [
     "dburke.pythonanywhere.com",
     "127.0.0.1",
     "127.0.0.1:5500",
-    "https://irishskateparksapp.danielburkedev.com/",
+    "irishskateparksapp.danielburkedev.com",
 ]
 
 
@@ -129,7 +129,10 @@ CORS_ORIGIN_WHITELIST = (
     "http://localhost:5500/",
 )
 
-CSRF_TRUSTED_ORIGINS = ["https://dburke.pythonanywhere.com"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://dburke.pythonanywhere.com",
+    "https://irishskateparksapp.danielburkedev.com",
+]
 
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
