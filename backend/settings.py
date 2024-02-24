@@ -31,7 +31,12 @@ SECRET_KEY = os.environ.get(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DJANGO_DEBUG", "") != "False"
 
-ALLOWED_HOSTS = ["dburke.pythonanywhere.com", "127.0.0.1", "127.0.0.1:5500"]
+ALLOWED_HOSTS = [
+    "dburke.pythonanywhere.com",
+    "127.0.0.1",
+    "127.0.0.1:5500",
+    "https://irishskateparksapp.danielburkedev.com/",
+]
 
 
 # Application definition
