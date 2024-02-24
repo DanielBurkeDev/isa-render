@@ -18,6 +18,8 @@ from corsheaders.defaults import default_headers
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+CORS_ALLOW_HEADERS = default_headers + ("Access-Control-Allow-Origin",)
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -35,7 +37,7 @@ ALLOWED_HOSTS = [
     "dburke.pythonanywhere.com",
     "127.0.0.1",
     "127.0.0.1:5500",
-    "https://irishskateparksapp.danielburkedev.com",
+    "irishskateparksapp.danielburkedev.com",
 ]
 
 
@@ -121,13 +123,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-CORS_ALLOW_HEADERS = default_headers + ("Access-Control-Allow-Origin",)
-
 # whitelisting React port. installed django-cors-headers
 CORS_ORIGIN_WHITELIST = (
     "http://127.0.0.1:5500",
     "http://localhost:5500/",
-    "irishskateparksapp.danielburkedev.com",
+    "https://irishskateparksapp.danielburkedev.com",
 )
 
 CSRF_TRUSTED_ORIGINS = [
