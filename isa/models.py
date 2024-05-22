@@ -3,15 +3,15 @@ from django.db import models
 
 class Skateparks(models.Model):
     SURFACE_TYPE = [
-        ("CONCRETE", "Concrete"),
-        ("WOOD", "Wood"),
-        ("UNKNOWN", "Unknown"),
+        ("concrete", "Concrete"),
+        ("wood", "Wood"),
+        ("unknown", "Unknown"),
     ]
 
     INDOOR_OUTDOOR = [
-        ("INDOOR", "Indoor"),
-        ("OUTDOOR", "Outdoor"),
-        ("Un", "Unknown"),
+        ("Indoor", "Indoor"),
+        ("Outdoor", "Outdoor"),
+        ("Unknown", "Unknown"),
     ]
 
     YES_NO = [

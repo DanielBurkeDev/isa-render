@@ -38,6 +38,7 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "127.0.0.1:5500",
     "irishskateparksapp.danielburkedev.com",
+    "https://irishskateparks.netlify.app/",
 ]
 
 
@@ -126,7 +127,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # whitelisting React port. installed django-cors-headers
 CORS_ORIGIN_WHITELIST = (
     "http://127.0.0.1:5500",
-    "http://localhost:5500/",
+    "http://localhost:5500",
     "https://irishskateparksapp.danielburkedev.com",
 )
 
